@@ -11,7 +11,8 @@
 
     <link rel="canonical" href="https://demo.creativebulma.net/doku/">
 
-    <link href="https://demo.creativebulma.net/doku/assets/css/app.css" rel="stylesheet">
+    <link href="{{asset('css/app.css')}}" rel="stylesheet">
+    <link href="{{asset('css/app.min.css')}}" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
     <!-- Load Font Awesome 5 -->
