@@ -19014,3 +19014,13 @@ pre code {
   box-shadow: none;
 }
 
+.work-item-box .button {
+  background-color: transparent;
+  box-shadow: none;
+  border-color: transparent;
+}
+
+.work-item-box:hover .more-work-items {
+  display: none;
+}
+

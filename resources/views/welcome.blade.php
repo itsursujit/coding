@@ -60,66 +60,67 @@
         <div class="hero is-light">
             <div class="hero-body">
                 <div class="columns">
-                    <div class="column is-two-fifths">
-                        <div class="dropdown is-hoverable">
-                            <div class="dropdown-trigger">
-                                <div class="box" aria-haspopup="true" aria-controls="dropdown-menu4">
-                                    <article class="media">
-                                        <div class="media-left">
-                                            <figure class="image is-64x64">
-                                                <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
-                                            </figure>
-                                        </div>
-                                        <div class="media-content">
-                                            <div class="content">
-                                                <p>
-                                                    <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
-                                                    <br>
-                                                    Lorem ipsum dolor sit amet
-                                                </p>
-                                            </div>
-                                            <nav class="level is-mobile">
-                                                <div class="level-left">
-                                                    <a class="level-item" aria-label="reply">
+                    <div class="column is-one-quarter">
+                        <div class="box work-item-box" aria-haspopup="true" aria-controls="dropdown-menu4">
+                            <article class="media">
+                                <div class="media-left">
+                                    <figure class="image is-64x64">
+                                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
+                                            <br>
+                                            Lorem ipsum dolor sit amet
+                                        </p>
+                                    </div>
+                                    <nav class="level is-mobile">
+                                        <div class="level-left">
+                                            <a class="level-item" aria-label="reply">
                                                         <span class="icon is-small">
                                                           <i class="fas fa-reply" aria-hidden="true"></i>
                                                         </span>
-                                                    </a>
-                                                    <a class="level-item" aria-label="retweet">
+                                            </a>
+                                            <a class="level-item" aria-label="retweet">
                                                         <span class="icon is-small">
                                                           <i class="fas fa-retweet" aria-hidden="true"></i>
                                                         </span>
-                                                    </a>
-                                                    <a class="level-item" aria-label="like">
+                                            </a>
+                                            <a class="level-item" aria-label="like">
                                                         <span class="icon is-small">
                                                           <i class="fas fa-heart" aria-hidden="true"></i>
                                                         </span>
-                                                    </a>
-                                                </div>
-                                            </nav>
+                                            </a>
                                         </div>
-                                    </article>
+                                    </nav>
                                 </div>
-                            </div>
-                            <div class="dropdown-menu" id="dropdown-menu4" role="menu">
-                                <div class="dropdown-content">
-                                    <div class="dropdown-item">
-                                        <p>You can insert <strong>any type of content</strong> within the dropdown menu.</p>
+                            </article>
+                            <div class="dropdown is-hoverable is-fullwidth more-work-tems">
+                                <div class="dropdown-trigger is-fullwidth">
+                                    <a class="button is-small is-fullwidth"><i class="fas fa-angle-down"></i></a>
+                                </div>
+                                <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                                    <div class="dropdown-content">
+                                        <div class="dropdown-item">
+                                            <p>You can insert <strong>any type of content</strong> within the dropdown menu.</p>
+                                        </div>
+                                        <hr class="dropdown-divider">
+                                        <div class="dropdown-item">
+                                            <p>You simply need to use a <code>&lt;div&gt;</code> instead.</p>
+                                        </div>
+                                        <hr class="dropdown-divider">
+                                        <a href="#" class="dropdown-item">
+                                            This is a link
+                                        </a>
                                     </div>
-                                    <hr class="dropdown-divider">
-                                    <div class="dropdown-item">
-                                        <p>You simply need to use a <code>&lt;div&gt;</code> instead.</p>
-                                    </div>
-                                    <hr class="dropdown-divider">
-                                    <a href="#" class="dropdown-item">
-                                        This is a link
-                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="column is-two-fifths is-pulled-right">
-                        <div class="container is-right">
+                    <div class="column">
+                        <div class="container">
                             <h1 class="title is-2 is-spaced has-text-weight-semibold">Quick-Start</h1>
 
                             <h2 class="subtitle is-6 has-text-weight-light">Doku is a clean documentation template based on bulma.io.</h2>
