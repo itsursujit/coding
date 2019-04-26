@@ -11,12 +11,16 @@ require('laravel-mix-purgecss');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
+mix.js('resources/js/app.js', 'public/js').extract(['vue', 'lodash', 'axios', 'jquery'])
    .sass('resources/sass/app.scss', 'public/css')
-    .purgeCss({
-    // Will *only* look for views and simplemde classes
-    paths: () => glob.sync([
-        path.join(__dirname, 'resources/**/*.blade.php'),
-        path.join(__dirname, 'resources/**/*.vue'),
-    ]),
-});
+   .sass('resources/sass/vendor.scss', 'public/css')
+    .options({
+        postCss: [
+            require('postcss-css-variables')()
+        ]
+    })
+    .purgeCss();
+
+if (mix.inProduction()) {
+    mix.version();
+}
