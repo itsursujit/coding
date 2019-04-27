@@ -19,6 +19,18 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
 
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+    <style>
+        .work-item-header .hero-body {
+            padding: 1rem;
+        }
+        .dropdown-menu {
+            z-index: 100;
+        }
+        .is-navbar-section {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+    </style>
 </head>
 
 <body>
@@ -30,7 +42,8 @@
 <div class="columns is-gapless">
     <div id="doc-menu" class="column is-2 has-background-grey-lighter menu is-mobile">
         <section class="section">
-            <h1 class="title is-4 has-text-weight-semibold has-text-centered">Doku <span class="is-size-5 has-text-primary has-text-weight-light">documentation</span></h1>
+            <img src="https://app.eacoding.com/images/new_clear_logo2.jpg" alt="" class="image">
+            {{--<h1 class="title is-4 has-text-weight-semibold has-text-centered">Doku <span class="is-size-5 has-text-primary has-text-weight-light">documentation</span></h1>--}}
         </section>
 
         <ul class="menu-list">
@@ -57,81 +70,165 @@
 
     </div>
     <div class="column">
-        <div class="hero is-light">
+        <div class="hero work-item-header">
             <div class="hero-body">
                 <div class="columns">
-                    <div class="column is-one-quarter">
-                        <div class="box work-item-box" aria-haspopup="true" aria-controls="dropdown-menu4">
-                            <article class="media">
-                                <div class="media-left">
-                                    <figure class="image is-64x64">
-                                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <div class="content">
-                                        <p>
-                                            <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
-                                            <br>
-                                            Lorem ipsum dolor sit amet
-                                        </p>
-                                    </div>
-                                    <nav class="level is-mobile">
-                                        <div class="level-left">
-                                            <a class="level-item" aria-label="reply">
+                    <div class="column is-one-half">
+                        <div class="columns">
+                            <div class="column is-one-third">
+                                <div class="box work-item-box" aria-haspopup="true" aria-controls="dropdown-menu4">
+                                    <article class="media">
+                                        <div class="media-left">
+                                            <figure class="image is-64x64">
+                                                <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+                                            </figure>
+                                        </div>
+                                        <div class="media-content">
+                                            <div class="content">
+                                                <p>
+                                                    <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
+                                                    <br>
+                                                    Lorem ipsum dolor sit amet
+                                                </p>
+                                            </div>
+                                            <nav class="level is-mobile">
+                                                <div class="level-left">
+                                                    <a class="level-item" aria-label="reply">
                                                         <span class="icon is-small">
                                                           <i class="fas fa-reply" aria-hidden="true"></i>
                                                         </span>
-                                            </a>
-                                            <a class="level-item" aria-label="retweet">
+                                                    </a>
+                                                    <a class="level-item" aria-label="retweet">
                                                         <span class="icon is-small">
                                                           <i class="fas fa-retweet" aria-hidden="true"></i>
                                                         </span>
-                                            </a>
-                                            <a class="level-item" aria-label="like">
+                                                    </a>
+                                                    <a class="level-item" aria-label="like">
                                                         <span class="icon is-small">
                                                           <i class="fas fa-heart" aria-hidden="true"></i>
                                                         </span>
-                                            </a>
+                                                    </a>
+                                                </div>
+                                            </nav>
                                         </div>
-                                    </nav>
-                                </div>
-                            </article>
-                            <div class="dropdown is-hoverable is-fullwidth more-work-tems">
-                                <div class="dropdown-trigger is-fullwidth">
-                                    <a class="button is-small is-fullwidth"><i class="fas fa-angle-down"></i></a>
-                                </div>
-                                <div class="dropdown-menu" id="dropdown-menu4" role="menu">
-                                    <div class="dropdown-content">
-                                        <div class="dropdown-item">
-                                            <p>You can insert <strong>any type of content</strong> within the dropdown menu.</p>
+                                    </article>
+                                    <div class="dropdown is-hoverable is-fullwidth more-work-tems">
+                                        <div class="dropdown-trigger is-fullwidth">
+                                            <a class="button is-small is-fullwidth"><i class="fas fa-angle-down"></i></a>
                                         </div>
-                                        <hr class="dropdown-divider">
-                                        <div class="dropdown-item">
-                                            <p>You simply need to use a <code>&lt;div&gt;</code> instead.</p>
+                                        <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                                            <div class="dropdown-content">
+                                                <div class="dropdown-item">
+                                                    <p>You can insert <strong>any type of content</strong> within the dropdown menu.</p>
+                                                </div>
+                                                <hr class="dropdown-divider">
+                                                <div class="dropdown-item">
+                                                    <p>You simply need to use a <code>&lt;div&gt;</code> instead.</p>
+                                                </div>
+                                                <hr class="dropdown-divider">
+                                                <a href="#" class="dropdown-item">
+                                                    This is a link
+                                                </a>
+                                            </div>
                                         </div>
-                                        <hr class="dropdown-divider">
-                                        <a href="#" class="dropdown-item">
-                                            This is a link
-                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="column">
-                        <div class="container">
-                            <h1 class="title is-2 is-spaced has-text-weight-semibold">Quick-Start</h1>
-
-                            <h2 class="subtitle is-6 has-text-weight-light">Doku is a clean documentation template based on bulma.io.</h2>
+                    <div class="column is-one-quarter">
+                        <div class="box work-item-box">
+                            <article class="media">
+                                <div class="media-right">
+                                    <figure class="image">
+                                        <img src="https://app.eacoding.com/images/edelberg.png" alt="">
+                                    </figure>
+                                </div>
+                            </article>
                         </div>
                     </div>
                 </div>
 
             </div>
         </div>
-        <section class="section">
-            <div class="container is-fluid">
+        <section class="section is-navbar-section has-background-light">
+            <nav class="navbar is-light">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="https://bulma.io">
+                        <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+                    </a>
+                    <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div id="navbarExampleTransparentExample" class="navbar-menu">
+                    <div class="navbar-start">
+                        <a class="navbar-item" href="https://bulma.io/">
+                            Home
+                        </a>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link" href="https://bulma.io/documentation/overview/start/">
+                                Docs
+                            </a>
+                            <div class="navbar-dropdown is-boxed">
+                                <a class="navbar-item" href="https://bulma.io/documentation/overview/start/">
+                                    Overview
+                                </a>
+                                <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+                                    Modifiers
+                                </a>
+                                <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
+                                    Columns
+                                </a>
+                                <a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
+                                    Layout
+                                </a>
+                                <a class="navbar-item" href="https://bulma.io/documentation/form/general/">
+                                    Form
+                                </a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
+                                    Elements
+                                </a>
+                                <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+                                    Components
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <div class="field is-grouped">
+                                <p class="control">
+                                    <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="http://localhost:4000" target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=http://localhost:4000&amp;via=jgthms">
+              <span class="icon">
+                <i class="fab fa-twitter"></i>
+              </span>
+                                        <span>
+                Tweet
+              </span>
+                                    </a>
+                                </p>
+                                <p class="control">
+                                    <a class="button is-primary" href="https://github.com/jgthms/bulma/releases/download/0.7.4/bulma-0.7.4.zip">
+              <span class="icon">
+                <i class="fas fa-download"></i>
+              </span>
+                                        <span>Download</span>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <section class="section has-background-light">
+            <div class="container">
                 <a href="#prerequisites" id="prerequisites" class="title is-4 has-text-weight-normal is-spaced anchor">
                     <span class="anchor-name">Prerequisites</span>
                 </a>
