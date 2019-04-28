@@ -18365,6 +18365,7 @@ body > .columns > .column:first-child {
 #doc-menu {
   background-color: #fff !important;
   box-shadow: 0 2px 8px rgba(14, 20, 26, 0.1);
+  z-index: 110;
 }
 
 .mobile-burger {
@@ -19022,5 +19023,31 @@ pre code {
 
 .work-item-box:hover .more-work-items {
   display: none;
+}
+
+.work-item-header .hero-body {
+  padding: 1rem;
+}
+
+.dropdown-menu {
+  z-index: 100;
+}
+
+.is-navbar-section {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.is-padded {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.has-margin-top {
+  margin-top: 20px;
+}
+
+.has-margin-left {
+  margin-left: 20px;
 }
 

@@ -20,16 +20,7 @@
 
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
     <style>
-        .work-item-header .hero-body {
-            padding: 1rem;
-        }
-        .dropdown-menu {
-            z-index: 100;
-        }
-        .is-navbar-section {
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-        }
+
     </style>
 </head>
 
@@ -70,7 +61,7 @@
 
     </div>
     <div class="column">
-        <div class="hero work-item-header">
+        <div class="hero work-item-header card">
             <div class="hero-body">
                 <div class="columns">
                     <div class="column is-one-half">
@@ -136,7 +127,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="column is-one-quarter">
+                    <div class="column is-one-quarter is-hidden-mobile">
                         <div class="box work-item-box">
                             <article class="media">
                                 <div class="media-right">
@@ -153,16 +144,6 @@
         </div>
         <section class="section is-navbar-section has-background-light">
             <nav class="navbar is-light">
-                <div class="navbar-brand">
-                    <a class="navbar-item" href="https://bulma.io">
-                        <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
-                    </a>
-                    <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
 
                 <div id="navbarExampleTransparentExample" class="navbar-menu">
                     <div class="navbar-start">
@@ -229,41 +210,65 @@
         </section>
         <section class="section has-background-light">
             <div class="container">
-                <a href="#prerequisites" id="prerequisites" class="title is-4 has-text-weight-normal is-spaced anchor">
-                    <span class="anchor-name">Prerequisites</span>
-                </a>
+                <div class="columns">
+                    <div class="column is-two-thirds is-padded">
+                        <a href="#prerequisites" id="prerequisites" class="title is-4 has-text-weight-normal is-spaced anchor">
+                            <span class="anchor-name">Prerequisites</span>
+                        </a>
 
-                <p> To customize the template you must have <strong>node, npm and Gulp</strong> installed in your computer.</p>
-                <ul class="step-text">
-                    <li>
-                        <h6 class="title is-6">node and npm</h6>
-                        <p>Installation guide of node can be found <a href="https://nodejs.org/en/" target="_blank">here</a>. As npm comes bundled with node, separate installation of npm is not needed.<br />
-                            If you have installed them, just checkout to the root folder and run the following command.</p>
-                        <p><figure class="highlight"><pre><code class="language-shell" data-lang="shell">npm install</code></pre></figure></p>
-                        <p>You can see that a folder <code>node_modules</code> is generated in your root folder with all dependencies files! </p>
-                    </li>
-                </ul>
-                <h6 class="title is-5 has-text-centered"><span class="icon has-text-success">
-              <i class="fas fa-thumbs-up"></i>
-            </span> You are now ready to customize Doku.</h6>
+                        <p> To customize the template you must have <strong>node, npm and Gulp</strong> installed in your computer.</p>
+                        <ul class="step-text">
+                            <li>
+                                <h6 class="title is-6">node and npm</h6>
+                                <p>Installation guide of node can be found <a href="https://nodejs.org/en/" target="_blank">here</a>. As npm comes bundled with node, separate installation of npm is not needed.<br />
+                                    If you have installed them, just checkout to the root folder and run the following command.</p>
+                                <p><figure class="highlight"><pre><code class="language-shell" data-lang="shell">npm install</code></pre></figure></p>
+                                <p>You can see that a folder <code>node_modules</code> is generated in your root folder with all dependencies files! </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column is-one-third  has-background-white">
 
-                <a href="#compilation" id="compilation" class="title is-4 has-text-weight-normal is-spaced anchor">
-                    <span class="anchor-name">Compilation</span>
-                </a>
+                    </div>
+                </div>
+                <div class="columns has-margin-top is-1">
+                    <div class="column is-two-thirds is-padded has-background-white">
+                        <a href="#compilation" id="compilation" class="title is-4 has-text-weight-normal is-spaced anchor">
+                            <span class="anchor-name">Compilation</span>
+                        </a>
 
-                <ul>
-                    <li>
-                        <h6 class="title is-6">Compile only</h6>
-                        <p><figure class="highlight"><pre><code class="language-shell" data-lang="shell">jekyll</code></pre></figure></p>
-                        <p class="helper">Compile your site and export it into the <code>/doc</code> folder.</p>
-                    </li>
-                    <li>
-                        <h6 class="title is-6">Compile and Test</h6>
-                        <p><figure class="highlight"><pre><code class="language-shell" data-lang="shell">jekyll serve</code></pre></figure></p>
-                        <p>Compile your site and run a local server to test it.</p>
-                    </li>
-                </ul>
+                        <ul>
+                            <li>
+                                <h6 class="title is-6">Compile only</h6>
+                                <p><figure class="highlight"><pre><code class="language-shell" data-lang="shell">jekyll</code></pre></figure></p>
+                                <p class="helper">Compile your site and export it into the <code>/doc</code> folder.</p>
+                            </li>
+                            <li>
+                                <h6 class="title is-6">Compile and Test</h6>
+                                <p><figure class="highlight"><pre><code class="language-shell" data-lang="shell">jekyll serve</code></pre></figure></p>
+                                <p>Compile your site and run a local server to test it.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column is-one-third is-padded has-background-white">
+                        <a href="#compilation" id="compilation" class="title is-4 has-text-weight-normal is-spaced anchor">
+                            <span class="anchor-name">Compilation</span>
+                        </a>
 
+                        <ul>
+                            <li>
+                                <h6 class="title is-6">Compile only</h6>
+                                <p><figure class="highlight"><pre><code class="language-shell" data-lang="shell">jekyll</code></pre></figure></p>
+                                <p class="helper">Compile your site and export it into the <code>/doc</code> folder.</p>
+                            </li>
+                            <li>
+                                <h6 class="title is-6">Compile and Test</h6>
+                                <p><figure class="highlight"><pre><code class="language-shell" data-lang="shell">jekyll serve</code></pre></figure></p>
+                                <p>Compile your site and run a local server to test it.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
