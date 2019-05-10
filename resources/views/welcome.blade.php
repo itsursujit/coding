@@ -33,7 +33,7 @@
 <div class="columns is-gapless">
     <div id="doc-menu" class="column is-2 has-background-grey-lighter menu is-mobile">
         <section class="section">
-            <img src="https://app.eacoding.com/images/new_clear_logo2.jpg" alt="" class="image">
+            <img src="" alt="" class="image">
             {{--<h1 class="title is-4 has-text-weight-semibold has-text-centered">Doku <span class="is-size-5 has-text-primary has-text-weight-light">documentation</span></h1>--}}
         </section>
 
@@ -132,7 +132,7 @@
                             <article class="media">
                                 <div class="media-right">
                                     <figure class="image">
-                                        <img src="https://app.eacoding.com/images/edelberg.png" alt="">
+                                        <img src="" alt="">
                                     </figure>
                                 </div>
                             </article>
