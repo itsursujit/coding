@@ -48,7 +48,21 @@ return [
 
         'daily' => [
             'driver' => 'daily',
-            'path' => storage_path('logs/laravel.log'),
+            'path' => storage_path('logs/app.log'),
+            'level' => 'debug',
+            'days' => 14,
+        ],
+
+        'payment' => [
+            'driver' => 'daily',
+            'path' => storage_path('logs/payments/payment.log'),
+            'level' => 'debug',
+            'days' => 14,
+        ],
+
+        'access' => [
+            'driver' => 'daily',
+            'path' => storage_path('logs/access/access.log'),
             'level' => 'debug',
             'days' => 14,
         ],
