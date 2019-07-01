@@ -82,8 +82,8 @@
             <div class="primary flex-1">
                 <nav class="p-3 mb-8 bg-white text-sm border-solid border-gray-200 border-b-2 border-l-2">
                     <form>
-                        <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-3/5 py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-400" id="inline-full-name" type="text" value="Jane Doe">
-
+                        {{--<input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-3/5 py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-400" id="inline-full-name" type="text" value="Jane Doe">--}}
+                        <input class="appearance-none block w-3/5 bg-gray-200 text-gray-700 border border-gray-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jane">
                         <button class="py-2 px-4 bg-teal-500 hover:bg-teal-600 focus:outline-none focus:shadow-outline">
                             Sign Up
                         </button>
