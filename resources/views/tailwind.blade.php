@@ -61,6 +61,9 @@
                                 <h2>42</h2>
                                 <span>Friends</span>
                             </div>
+                            {{--<div class="text-center">
+                                <div class="cursor-pointer text-grey-dark hover:text-blue duration-4"><i class="fas fa-ellipsis-v"></i></div>
+                            </div>--}}
                         </div>
                     </div>
                 </section>
@@ -80,14 +83,25 @@
                 </section>
             </aside>
             <div class="primary flex-1">
-                <nav class="p-3 mb-8 bg-white text-sm border-solid border-gray-200 border-b-2 border-l-2">
-                    <form>
-                        {{--<input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-3/5 py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-400" id="inline-full-name" type="text" value="Jane Doe">--}}
-                        <input class="appearance-none block w-3/5 bg-gray-200 text-gray-700 border border-gray-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jane">
+                <nav class="p-3 mb-8 bg-white text-sm border-solid border-gray-200 border-b-2 border-l-2 clearfix">
+                    {{--<form>
+                        --}}{{--<input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-3/5 py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-400" id="inline-full-name" type="text" value="Jane Doe">--}}{{--
+                        <input class="appearance-none w-2/5 focus:bg-gray-200 text-gray-700 border focus:border-gray-500 py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jane">
                         <button class="py-2 px-4 bg-teal-500 hover:bg-teal-600 focus:outline-none focus:shadow-outline">
                             Sign Up
                         </button>
-                    </form>
+                    </form>--}}
+                    <ul class="flex float-right">
+                        <li class="mr-6">
+                            <a class="block py-1 md:py-3 pl-1 align-middle text-gray-500 no-underline hover:text-gray-900 border-b-2 border-white hover:border-teal-500" href="#">Active</a>
+                        </li>
+                        <li class="mr-6">
+                            <a class="block py-1 md:py-3 pl-1 align-middle text-gray-500 no-underline hover:text-gray-900 border-b-2 border-white hover:border-teal-500" href="#">Link</a>
+                        </li>
+                        <li class="mr-6">
+                            <a class="block py-1 md:py-3 pl-1 align-middle text-gray-500 no-underline hover:text-gray-900 border-b-2 border-white hover:border-teal-500" href="#">Link</a>
+                        </li>
+                    </ul>
                 </nav>
                 <div class="pl-4 pr-4">
                     <router-view></router-view>

@@ -6,3 +6,6 @@
 @import "~tailwindcss/components";
 
 @import "~tailwindcss/utilities";
+.v--modal {
+  overflow-y: auto !important;
+}

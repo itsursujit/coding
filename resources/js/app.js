@@ -1,6 +1,15 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import routes from './routes'
+import axios from "axios";
+import LazyLoadDirective from "./directives/LazyLoadDirectives";
+
+Vue.config.productionTip = false;
+
+axios.defaults.baseURL = "http://coding.test/api/articles";
+
+Vue.directive("lazyload", LazyLoadDirective);
+
 Vue.use(VueRouter);
 
 require('./bootstrap');
