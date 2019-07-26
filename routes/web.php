@@ -11,6 +11,7 @@
 |
 */
 
+
 Route::get('/{any?}', function () {
     return view('tailwind');
 });
